@@ -1,0 +1,63 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    getline(cin,s);
+    int sum = 0;
+    int i=s.find("a");
+    if(i>-1)sum++;
+    i=s.find("b");
+    if(i>-1)sum++;
+    i=s.find("c");
+    if(i>-1)sum++;
+    i=s.find("d");
+    if(i>-1)sum++;
+    i=s.find("e");
+    if(i>-1)sum++;
+    i=s.find("f");
+    if(i>-1)sum++;
+    i=s.find("g");
+    if(i>-1)sum++;
+    i=s.find("h");
+    if(i>-1)sum++;
+    i=s.find("i");
+    if(i>-1)sum++;
+    i=s.find("j");
+    if(i>-1)sum++;
+    i=s.find("k");
+    if(i>-1)sum++;
+    i=s.find("l");
+    if(i>-1)sum++;
+    i=s.find("m");
+    if(i>-1)sum++;
+    i=s.find("n");
+    if(i>-1)sum++;
+    i=s.find("o");
+    if(i>-1)sum++;
+    i=s.find("p");
+    if(i>-1)sum++;
+    i=s.find("q");
+    if(i>-1)sum++;
+    i=s.find("r");
+    if(i>-1)sum++;
+    i=s.find("s");
+    if(i>-1)sum++;
+    i=s.find("t");
+    if(i>-1)sum++;
+    i=s.find("u");
+    if(i>-1)sum++;
+    i=s.find("v");
+    if(i>-1)sum++;
+    i=s.find("w");
+    if(i>-1)sum++;
+    i=s.find("x");
+    if(i>-1)sum++;
+    i=s.find("y");
+    if(i>-1)sum++;
+    i=s.find("z");
+    if(i>-1)sum++;
+    cout<<sum<<endl;
+    return 0;
+}
