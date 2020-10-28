@@ -1,25 +1,37 @@
 #include<bits/stdc++.h>
+
 using namespace std;
 
 int main()
 {
-    int n,m;
-    cin>>n>>m;
+
+    int n;cin>>n;
     int arr[n];
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
+    int a[n];
+    for(int i=0; i<n; i++)
+    {
+        int p; cin>>p;
+        arr[i]=p;
+        a[i]=p;
     }
-    sort(arr, arr+n);
-    int sum = 0;
-    for(int i=0; m!=0; i++){
-        if(arr[i]<0){
-            sum += arr[i];
-            m--;
-        }else{
-            break;
+
+    int minn = INT_MAX;
+    int t1=0,t2=0;
+    for(int i=0; i<n-1; i++)
+    {
+        if(abs(arr[i]-arr[i+1])<minn)
+        {
+            t1=i;
+            t2=i+1;
+            minn = abs(arr[i]-arr[i+1]);
         }
     }
-    cout<<abs(sum)<<endl;
 
+    if(abs(arr[0]-arr[n-1])<minn)
+    {
+        t1=0; t2=n-1;
+    }
+
+    cout<<++t1<<' '<<++t2<<endl;
     return 0;
 }
